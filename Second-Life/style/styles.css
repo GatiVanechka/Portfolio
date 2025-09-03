@@ -1,0 +1,214 @@
+body {
+    background-image: url('../images/bg.png');
+    background-repeat: repeat; /* повтор по умолчанию (и по X и по Y) */
+        background-size: 100px 100px; /* уменьшаем размер картинки */
+}
+    .card, .list-group-item, .navbar, .alert {
+        background-color: rgb(255, 255, 255); /* Белый фон для контентных блоков */
+        border: 3px rgb(218, 118, 67) solid;
+    }
+.nav-item .nav-link.active {
+    border-bottom: 2px solid rgb(118,69,43) !important;
+    font-weight: 600;
+    border-radius: 30%;
+}
+.navbar {
+    background-color: #f9f3e8; /* Бежевый из логотипа */
+}
+.navbar-brand img {
+    height: 80px;
+}
+.navbar-nav {
+    gap: 20px;
+}
+footer, a, h1, h2, h3, h4, h5, h6, p, span {
+    color: rgb(117,68,42) !important;
+}
+.btn-orange {
+    background-color: rgb(218, 118, 67);
+    border-color: rgb(218, 118, 67);
+    color: white !important;
+}
+
+.btn-orange:hover {
+    background-color: rgb(200, 100, 55); /* чуть темнее при наведении */
+    border-color: rgb(200, 100, 55);
+    color: white;
+}
+.fixed-image {
+    height: 250px; /* или подбери свою высоту */
+    object-fit: cover;
+}
+
+.card-body {
+        border-radius: 0% 0% 10% 10%;
+}
+
+/* Добавим в конец файла */
+.bg-orange {
+    background-color: rgb(218, 118, 67);
+}
+
+.btn-orange {
+    background-color: rgb(218, 118, 67);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: rgb(200, 100, 50);
+    color: white;
+}
+
+.progress {
+    height: 30px;
+}
+
+.progress-bar {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Добавим в конец файла */
+.animal-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+}
+
+#animalDetails .card {
+    height: 100%;
+}
+
+#animalDetails .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+/* Стиль для активной новости */
+.list-group-item.active-news {
+    background-color: rgb(218, 118, 67) !important;
+    border-color: rgb(218, 118, 67) !important;
+}
+
+.list-group-item.active-news,
+.list-group-item.active-news span,
+.list-group-item.active-news small {
+    color: white !important;
+}
+
+/* Стиль при наведении на активную новость */
+.list-group-item.active-news:hover {
+    background-color: rgb(200, 100, 55) !important;
+    border-color: rgb(200, 100, 55) !important;
+}
+
+.list-group-item.active-news:hover,
+.list-group-item.active-news:hover span,
+.list-group-item.active-news:hover small {
+    color: white !important;
+}
+
+.animal-card {
+    border: none !important;
+    box-shadow: none !important;
+}
+.animal-card .card-footer {
+    border-top: none !important;
+}
+
+    .news-title-truncate {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .list-group-item:hover .news-title-truncate {
+        -webkit-line-clamp: unset;
+    }
+    
+    .news-content {
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+    
+    /* Убираем обводку у основной карточки новости */
+    .card.shadow-sm {
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    /* Стили для списка новостей */
+    .list-group {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .list-group-item {
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        padding: 12px 15px;
+        transition: all 0.2s ease;
+    }
+
+    .list-group-item.active {
+                background-color: rgb(218, 118, 67) !important;
+    }
+    .list-group-item:last-child {
+        border-bottom: none;
+    }
+    .bg-orange {
+                background-color: rgb(218, 118, 67) !important;
+    }
+    
+    /* Граница с эффектом утоньшения к краям */
+    .list-group-item::after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        width: 60%;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+    }
+    
+    .list-group-item:last-child::after {
+        display: none;
+    }
+    
+    /* Стили для активной новости */
+    .active-news {
+        background-color: rgb(218, 118, 67) !important;
+        color: white !important;
+    }
+
+.card.shadow-sm {
+    box-shadow: none !important;
+        border: 3px rgb(218, 118, 67) solid;
+}
+
+footer {
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1030;
+}
+
+.nav-item .nav-link.active {
+        border-bottom: 2px solid #000;
+        font-weight: 600;
+    }
+    
+    /* Глубокая тень для хедера */
+    .navbar {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        z-index: 1030;
+    }
+    
+    /* Убираем стандартную тень Bootstrap */
+    .navbar.shadow-sm {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    }
+    
